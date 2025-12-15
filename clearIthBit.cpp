@@ -1,11 +1,14 @@
 #include <iostream>
 using namespace std;
 
-int clearIthBit(int num, int i) {
-    int bitMask = ~(1 << i);
-    return num & bitMask;
+int clearIthBit(int num, int i)
+{
+    return num & ~(1 << i);
 }
 
-int main(){
-    cout << clearIthBit(6,1);
+int main()
+{
+    cout<< clearIthBit(13,0);
+
+    return 0;
 }

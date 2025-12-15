@@ -1,16 +1,13 @@
 #include <iostream>
 using namespace std;
 
-bool check(int num) {
-    if (!(num & (num -1))) {
-        return true;
-    }  else {
-        return false;
-    }
-} 
+int power(int num)
+{
+    return ((num & (num - 1)) == 0);
+}
 
-int main(){
-
-    cout << check(8);
-
+int main()
+{    
+    cout << power(8);
+    return 0;
 }
